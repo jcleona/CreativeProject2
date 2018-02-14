@@ -1,0 +1,162 @@
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar a {
+    color: white;
+    margin: .9vw;
+    font-weight: 200;
+    padding: 0 .9vw 0 .9vw;
+  }
+  body {
+    margin: .3vw;
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-family: sans-serif;
+    font-weight: 200;
+    background-repeat: repeat-x;
+    /* background: rgba(255,255,255,0); */
+  }
+  p {
+    text-align: center;
+    font-size: calc(9px + 3vw);
+  }
+  hr {
+    height: .15vw;
+    border-width: 0;
+    margin: 0;
+    background-color: white !important;
+    /* background-color: HSLa(48, 100%, 70%, 1); */
+  }
+  img {
+    max-width: calc(5px + 3vw);
+    margin: 0;
+  }
+  .navbar {
+    grid-area: navbar;
+  }
+  .header {
+		grid-area: header;
+	}
+  .sidebar {
+		grid-area: sidebar;
+	}
+  .content {
+		grid-area: content;
+	}
+  .content1 {
+		grid-area: content1;
+	}
+  .content2 {
+		grid-area: content2;
+	}
+  .content3 {
+    grid-area: content3;
+  }
+	.sidebar2 {
+		grid-area: sidebar2;
+	}
+	.footer {
+		grid-area: footer;
+	}
+  .wrapper {
+    display: grid;
+    grid-row-gap: 1vw;
+    grid-column-gap: 2vw;
+    grid-template-areas:
+     "navbar"
+     "header"
+     "sidebar"
+     "content"
+     "content1"
+     "content2"
+     "content3"
+     "sidebar2"
+     "footer";
+  }
+	@media only screen and (min-width: 700px)   {
+		.wrapper {
+			grid-template-columns: 1fr 4fr 4fr 1fr;
+			grid-template-areas:
+      "navbar   navbar   navbar   navbar"
+      "header   header   header   header"
+      "sidebar  content  content  sidebar2"
+			"sidebar  content1 content2 sidebar2"
+      "content3 content3 content3 content3"
+			"footer   footer   footer   footer";
+		}
+	}
+.box {
+  border-radius: .7vw;
+  padding: .5vw 0 .5vw 0;
+  text-align: center;
+  font-size: calc(9px + 2vw);
+}
+.navbar {
+  background-color: hsla(215, 70%, 57%, 1);
+  font-weight: bold;
+  font-style: normal;
+  font-size: calc(12px + 1.8vw);
+}
+.navbar a:hover:not(.active) {
+  background-color: lightGrey;
+}
+.navbar a.active {
+  color: grey;
+  background-color: hsl(215, 70%, 90%);
+}
+.header {
+}
+.content, .content1, .content2 {
+  /* font-family: 'Cormorant Garamond', serif; */
+  font-family: 'Josefin Slab', serif;
+  background-color: hsl(215, 70%, 90%);
+  color: black;
+  padding: 4vw;
+  font-weight: lighter;
+}
+.sidebar2 {
+  color: hsl(180, 90%, 19%);
+}
+.footer {
+  color: black !important;
+  background-image: url("sparklygold.jpeg");
+  /* background-color: HSLa(48, 100%, 70%, 0.5); */
+}
+textarea {
+  padding: 2vw 0vw 1vw 2.9vw;
+  height: 3.9%;
+  width: 60vw;
+  resize: none;
+  border-bottom: 0px 0px 1px 0px;
+  background-color: Grey;
+  /* box-shadow: 3px 3px 5px 0px #ccc; */
+}
+button {
+  /* border-color: DimGrey; */
+  background-color: inherit;
+  height: calc(20px + 4vw);
+  width: calc(80px + 60vw);
+  font-size: 2.5vw;
+  font-weight: lighter;
+  color: #262626;
+  border-radius: .2vw;
+  text-align: center;
+}
+::placeholder {
+  color: silver;
+  font-weight: 100;
+}
+#git {
+  max-width: 1.6vw;
+  margin-bottom: 0 important;
+}
+#goldResultsAM, #silverResultsAM {
+  text-align: left !important;
+  font-size: 2vw;
+  font-weight: lighter;
+}
+#chart_div, #chart_div_silver {
+  display: center !important;
+  width: 100vw;
+  height: 40vw;
+}
