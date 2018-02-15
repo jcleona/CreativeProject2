@@ -26,8 +26,8 @@ $(document).ready(function() {
                 data.addColumn('string', 'Date');
                 data.addColumn('number', '');
                 data.addRows([
-                  [chartDate[0], amGold[0]],  [chartDate[1], amGold[1]],  [chartDate[2], amGold[2]],  [chartDate[3], amGold[3]],  [chartDate[4], amGold[4]],  [chartDate[5], amGold[5]],
-                  [chartDate[6], amGold[0]]
+                  [chartDate[6], amGold[6]],  [chartDate[5], amGold[5]],  [chartDate[4], amGold[4]],  [chartDate[3], amGold[3]],  [chartDate[2], amGold[2]],  [chartDate[1], amGold[1]],
+                  [chartDate[0], amGold[0]]
                 ]);
                 var options = {
                   legend: {position:'none'},
@@ -57,7 +57,7 @@ $(document).ready(function() {
        	    success : function(json) {
          		console.log(json);
             var chartDateSilver = [];
-            var amSilver= [];
+            var amSilver = [];
             for (var i = 0; i < 7; i++) {
               var date = json.dataset.data[i][0];
               chartDateSilver[i] = date.substring(5,10).replace(/-/g,"/").replace(/0/g,"");
@@ -73,14 +73,14 @@ $(document).ready(function() {
                   data.addColumn('string', 'Date');
                   data.addColumn('number', '');
                   data.addRows([
-                    [chartDateSilver[0], amSilver[0]],  [chartDateSilver[1], amSilver[1]],  [chartDateSilver[2], amSilver[2]],  [chartDateSilver[3], amSilver[3]],  [chartDateSilver[4], amSilver[4]],  [chartDateSilver[5], amSilver[5]],
-                    [chartDateSilver[6], amSilver[0]]
+                    [chartDateSilver[6], amSilver[6]],  [chartDateSilver[5], amSilver[5]],  [chartDateSilver[4], amSilver[4]],  [chartDateSilver[3], amSilver[3]],  [chartDateSilver[2], amSilver[2]],  [chartDateSilver[1], amSilver[1]],
+                    [chartDateSilver[0], amSilver[0]]
                   ]);
                   var options = {
                     legend: {position:'none'},
                     hAxis: {title: 'Date'},
                     vAxis: {  title: 'US $',
-                    format: '0'}
+                    format: '0.00'}
                   };
                   var chart = new
                   google.visualization.LineChart(document.getElementById('chart_div_silver'));
