@@ -6,7 +6,7 @@
     color: white;
     margin: .9vw;
     font-weight: 200;
-    padding: 0 .9vw 0 .9vw;
+    padding: .5vw .9vw 0 .9vw;
   }
   body {
     margin: .3vw;
@@ -25,7 +25,6 @@
     border-width: 0;
     margin: 0;
     background-color: white !important;
-    /* background-color: HSLa(48, 100%, 70%, 1); */
   }
   img {
     max-width: calc(5px + 3vw);
@@ -98,6 +97,7 @@
   font-size: calc(12px + 1.8vw);
 }
 .navbar a:hover:not(.active) {
+
   background-color: lightGrey;
 }
 .navbar a.active {
@@ -120,7 +120,6 @@
 .footer {
   color: black !important;
   background-image: url("sparklygold.jpeg");
-  /* background-color: HSLa(48, 100%, 70%, 0.5); */
 }
 textarea {
   padding: 2vw 0vw 1vw 2.9vw;
@@ -129,10 +128,8 @@ textarea {
   resize: none;
   border-bottom: 0px 0px 1px 0px;
   background-color: Grey;
-  /* box-shadow: 3px 3px 5px 0px #ccc; */
 }
 button {
-  /* border-color: DimGrey; */
   background-color: inherit;
   height: calc(20px + 4vw);
   width: calc(80px + 60vw);
