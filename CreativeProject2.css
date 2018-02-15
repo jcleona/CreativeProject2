@@ -27,8 +27,7 @@
     background-color: white !important;
   }
   img {
-    max-width: calc(5px + 3vw);
-    margin: 0;
+
   }
   .navbar {
     grid-area: navbar;
@@ -133,7 +132,8 @@ button {
   background-color: inherit;
   height: calc(20px + 4vw);
   width: calc(80px + 60vw);
-  font-size: 2.5vw;
+  /* font-size: 2.5vw; */
+  font-size: calc(8px + 2vw);
   font-weight: lighter;
   color: #262626;
   border-radius: .2vw;
@@ -144,8 +144,8 @@ button {
   font-weight: 100;
 }
 #git {
+  margin: 0;
   max-width: 1.6vw;
-  margin-bottom: 0 important;
 }
 #goldResultsAM, #silverResultsAM {
   text-align: left !important;
@@ -156,4 +156,8 @@ button {
   display: center !important;
   width: 100vw;
   height: 40vw;
+}
+#gold {
+  width 400px;
+  height: 300px;
 }
